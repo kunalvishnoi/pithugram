@@ -11,6 +11,7 @@
 }
 
 .footer{
+  margin-top: 70px;
 li {
   margin-right:10px;
 }}
@@ -24,9 +25,12 @@ li {
 
 
 .help{
-  text-align: center;
+  h1{
+    font-family: cursive;
+  text-align: center;}
   .row{
-    margin-top: 50px;
+    margin-bottom: 30px;
+
   }
 }
 
@@ -43,4 +47,21 @@ li {
 /* TOP MARGIN OF CONTAINER FOR MOBILE */
 .xs-margin {
     margin-top: 80px;
+}
+
+
+
+.center {
+  text-align: center;
+}
+
+/* FOR USERS */
+.users{
+  h2 {text-align: center;}
+  background-color: lightgrey;
+  margin-bottom: 50px;
+  .row{
+    margin-top: 50px;
+
+  }
 }
