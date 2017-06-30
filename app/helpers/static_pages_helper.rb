@@ -1,5 +1,5 @@
 module StaticPagesHelper
-  def full_title(main_title='')
+  def full_title(main_title = '')
     base_title = 'Pithugram'
     if main_title.empty?
       base_title
