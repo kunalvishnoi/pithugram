@@ -26,19 +26,24 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
+# correct the code
 gem 'rubocop', require: false
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# Add bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
-
+# Testing code coverage
 gem 'coveralls', require: false
-
+# For gravatars
+gem 'gravatarify', '~> 3.0.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
-  gem 'gravatarify', '~> 3.0.0'
+
   gem 'selenium-webdriver'
 end
 
