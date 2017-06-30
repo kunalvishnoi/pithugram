@@ -1,10 +1,40 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.container{
-  padding-top: 51px;
-}
+/* HOME PAGE */
 .jumbotron{
   text-align: center;
-  font-family: cursive;
+
+  h1{
+    font-family: cursive;
+    }
+}
+
+
+/*NAVBAR */
+.navbar-bottom{
+  .row{
+  border-top: 1px solid lightgrey;}
+}
+
+.help{
+  text-align: center;
+  .row{
+    margin-top: 50px;
+  }
+}
+
+.about{
+  h1{
+    font-family: cursive;
+    text-align: center;
+  }
+  .panel-group{
+    margin-top: 30px;
+  }
+}
+
+/* TOP MARGIN OF CONTAINER FOR MOBILE */
+.xs-margin {
+    margin-top: 80px;
 }
