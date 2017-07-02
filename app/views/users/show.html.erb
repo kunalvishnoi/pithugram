@@ -1,16 +1,26 @@
 
-<div class= "users">
+<div class= "user">
 
   <div class= "row">
 
   <h2 style="margin-bottom: 20px;">Profile</h2>
 
-  <div class="col-xs-10 col-xs-offset-1 col-md-offset-1 col-md-10">
+  <div class="col-xs-10  col-md-offset-1 col-md-10">
 
 <%= gravatar_tag @user.email, :size => 70 %>
 
 
 <h3 style="text-align: center;">  Name:&nbsp <%= @user.name %></h3>
+  <div class="micropost">
+<% if @user.microposts.any? %>
+<h4> MICROPOSTS (<%= @user.microposts.count %>)</h4>
+<ol>
+  <%= render @microposts %>
+</ol>
+</div>
+<%= will_paginate @microposts %>
+
+<% end %>
 </div>
 </div>
 </div>

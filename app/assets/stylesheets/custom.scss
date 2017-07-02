@@ -56,10 +56,10 @@ li {
 }
 
 /* FOR USERS */
-.users{
+.user{
   h2 {text-align: center;}
-  background-color: lightgrey;
-  height: 250px;
+
+
   margin-bottom: 30px;
   .row{
     margin-top: 50px;
@@ -90,12 +90,37 @@ li {
 
 /* Users index */
 
-.user {
+.users {
   list-style: none;
   margin: 0;
   li {
     overflow: auto;
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+
+/* MICROPOST */
+
+.micropost{
+  margin-top: 50px;
+  li{
+    margin-top: 50px;
+  }
+  a{
+    margin-top: 20px;
+    margin: 0 0px;
+    float: left;
+  }
+  .use{
+    a{
+    margin: 0 10px;
+  }
+}
+
+.content {
+    display: block;
+    margin-left: 60px;
   }
 }
