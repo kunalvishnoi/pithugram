@@ -19,6 +19,14 @@ class User < ApplicationRecord
     BCrypt::Password.create(string, cost: cost)
   end
 
+  def feed
+    Micropost.where("user_id=?", id)
+  end
+
+
+
+
+
   def User.new_token
     SecureRandom.urlsafe_base64
   end

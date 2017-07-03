@@ -10,7 +10,7 @@
 <%= gravatar_tag @user.email, :size => 70 %>
 
 
-<h3 style="text-align: center;">  Name:&nbsp <%= @user.name %></h3>
+<h3 style="text-align: center;">  Name:&nbsp <%= @user.name.capitalize %></h3>
   <div class="micropost">
 <% if @user.microposts.any? %>
 <h4> MICROPOSTS (<%= @user.microposts.count %>)</h4>
