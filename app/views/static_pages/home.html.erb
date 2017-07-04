@@ -6,6 +6,9 @@
     &nbsp
     <span><%= link_to @micropost.user.name.capitalize, @micropost.user %></span> |
     <span><%= pluralize(current_user.microposts.count, "Micropost") %></span>
+    <section class="stats">
+            <%= render 'shared/stats' %>
+          </section>
 
     <br>
 

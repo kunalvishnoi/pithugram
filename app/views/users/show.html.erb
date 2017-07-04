@@ -11,7 +11,10 @@
  <h4>Name:&nbsp <%= @user.name.capitalize %></h4>
 
 
-
+ <section class="stats">
+   <%= render 'shared/stats' %>
+ </section>
+ <%= render 'follow_form' if logged_in? %>
 
 <% if @user.microposts.any? %>
 <h4> MICROPOSTS (<%= @user.microposts.count %>)</h4>
