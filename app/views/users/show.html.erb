@@ -14,8 +14,9 @@
  <section class="stats">
    <%= render 'shared/stats' %>
  </section>
+ <br>
  <%= render 'follow_form' if logged_in? %>
-
+<br><br>
 <% if @user.microposts.any? %>
 <h4> MICROPOSTS (<%= @user.microposts.count %>)</h4>
 <ol class="micropost">
