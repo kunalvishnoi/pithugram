@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'faker',          '1.7.3'
-
+gem 'haml'
 # correct the code
 gem 'rubocop', require: false
 # Use Capistrano for deployment
@@ -54,8 +54,9 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
-
+  gem 'rspec-rails', '~> 3.5'
   gem 'selenium-webdriver'
+  gem 'rails-controller-testing'
 end
 
 group :development do

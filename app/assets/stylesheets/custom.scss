@@ -6,12 +6,15 @@
   text-align: center;
 
   h1{
-    font-family: cursive;
+    font-family: arial;
     }
 }
 
+
 .footer{
   margin-top: 70px;
+
+
 li {
   margin-right:10px;
 }}
@@ -62,7 +65,7 @@ li {
 
 .help{
   h1{
-    font-family: cursive;
+    font-family: arial;
   text-align: center;}
   .row{
     margin-bottom: 30px;
@@ -72,7 +75,7 @@ li {
 
 .about{
   h1{
-    font-family: cursive;
+    font-family: arial;
     text-align: center;
   }
   .panel-group{
@@ -158,4 +161,11 @@ li {
     margin-left: 60px;
   }
 
+}
+
+#logo{
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: -0.9px;
+  font-weight: bold;
 }
