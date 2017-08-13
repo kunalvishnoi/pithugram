@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-gem 'faker',          '1.7.3'
+gem 'faker', '1.7.3'
 gem 'haml'
 # correct the code
 gem 'rubocop', require: false
@@ -41,22 +41,21 @@ gem 'coveralls', require: false
 gem 'gravatarify', '~> 3.0.0'
 gem 'jquery-rails'
 
-gem 'will_paginate',           '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'carrierwave'
-gem 'mini_magick'
 gem 'fog'
-
-
+gem 'mini_magick'
+gem 'will_paginate', '3.1.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
+  gem 'factory_girl'
+  gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 3.5'
   gem 'selenium-webdriver'
-  gem 'rails-controller-testing'
 end
 
 group :development do
@@ -73,7 +72,6 @@ end
 group :production do
   gem 'pg'
 end
-
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

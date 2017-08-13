@@ -1,0 +1,18 @@
+.row
+  %h2{:style => "text-align: center;"} Profile
+  .col-xs-12.col-md-offset-1.col-md-10
+    = gravatar_tag @user.email, :size => 70, id: "w"
+    %h4
+      Name: #{@user.name.capitalize}
+    %section.stats
+      = render 'shared/stats'
+    %br/
+    = render 'follow_form' if logged_in?
+    %br/
+    %br/
+    - if @user.microposts.any?
+      %h4
+        MICROPOSTS (#{@user.microposts.count})
+      %ol.micropost
+        = render @microposts
+  = will_paginate @microposts

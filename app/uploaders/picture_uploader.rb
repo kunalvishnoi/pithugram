@@ -1,6 +1,6 @@
 class PictureUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
-    process resize_to_limit: [400, 400]
+  process resize_to_limit: [400, 400]
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
@@ -18,7 +18,7 @@ class PictureUploader < CarrierWave::Uploader::Base
 
   # Add a white list of extensions which are allowed to be uploaded.
   def extension_white_list
-    %w(jpg jpeg gif png)
+    %w[jpg jpeg gif png]
   end
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url(*args)
@@ -51,5 +51,4 @@ class PictureUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
-
 end

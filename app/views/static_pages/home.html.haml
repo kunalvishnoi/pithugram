@@ -1,0 +1,19 @@
+- if logged_in?
+  .row
+    .col-xs-12.col-md-3{:style => "margin-top: 20px;"}
+      = link_to gravatar_tag(@micropost.user, size: 50), @micropost.user
+      %span= link_to @micropost.user.name.capitalize, @micropost.user
+      |
+      %span= pluralize(current_user.microposts.count, "Micropost")
+      %section.stats
+        = render 'shared/stats'
+      %br/
+      = render 'shared/micropost'
+    .col-xs-12.col-md-8.col-md-offset-1
+      %h3{:style => "margin-left: 35px;"} Micropost Feed
+      = render 'shared/feed'
+- else
+  .jumbotron
+    %h1 Welcome To Pithugram
+    %p A Micro-Blogging Application
+    = link_to "<button type='button' class='btn btn-primary btn-lg'>Signup</button>".html_safe, signup_path
